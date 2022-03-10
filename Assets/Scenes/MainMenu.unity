@@ -208,7 +208,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 33.3
+  m_fontSize: 40.1
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -391,7 +391,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270385187}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &270385189
 Camera:
   m_ObjectHideFlags: 0
@@ -419,7 +419,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 233.84903
+  orthographic size: 254.22054
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -443,8 +443,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270385187}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 486, y: 297, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 417.86865, y: 269, z: -10}
+  m_LocalScale: {x: 1.0947353, y: 1.2040468, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -487,8 +487,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.913571, y: -157.73068}
-  m_SizeDelta: {x: 175.856, y: 48.122}
+  m_AnchoredPosition: {x: 35, y: -234}
+  m_SizeDelta: {x: 192.499, y: 57.937}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &274039994
 MonoBehaviour:
@@ -536,7 +536,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 173174374}
         m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
-        m_MethodName: LoadExploreScene
+        m_MethodName: LoadEmailScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -620,8 +620,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.9136, y: 307}
-  m_SizeDelta: {x: 568.884, y: 64.001}
+  m_AnchoredPosition: {x: 41.892967, y: 295.271}
+  m_SizeDelta: {x: 622.724, y: 77.055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296987691
 MonoBehaviour:
@@ -1292,8 +1292,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -29, y: 36}
-  m_SizeDelta: {x: 1231.4, y: 647.29}
+  m_AnchoredPosition: {x: 21, y: -31}
+  m_SizeDelta: {x: 1347.941, y: 779.308}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415184390
 MonoBehaviour:
@@ -1357,8 +1357,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -9.9136, y: 0.000080109}
-  m_SizeDelta: {x: 356.2, y: 138.163}
+  m_AnchoredPosition: {x: 41.892967, y: -41}
+  m_SizeDelta: {x: 389.912, y: 166.342}
   m_Pivot: {x: 0.5, y: 0.50000066}
 --- !u!114 &1585461011
 MonoBehaviour:
@@ -1485,7 +1485,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 32.45
+  m_fontSize: 39.05
   m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1572,8 +1572,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 474, y: 359}
-  m_SizeDelta: {x: 135.993, y: 78.09}
+  m_AnchoredPosition: {x: 480.18228, y: 357.87805}
+  m_SizeDelta: {x: 148.864, y: 94.016}
   m_Pivot: {x: 0.49999994, y: 0.5}
 --- !u!114 &1899166451
 MonoBehaviour:
@@ -1746,11 +1746,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2620321744265393848, guid: 690b197b8c81c9c459bf982629ad2eb2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 273.54874
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2620321744265393848, guid: 690b197b8c81c9c459bf982629ad2eb2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -356.992
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2620321744265393848, guid: 690b197b8c81c9c459bf982629ad2eb2, type: 3}
       propertyPath: m_LocalPosition.z

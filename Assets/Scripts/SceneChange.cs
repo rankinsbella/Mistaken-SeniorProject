@@ -3,6 +3,7 @@
 	using UnityEngine;
 	using UnityEngine.SceneManagement;
 
+
 public class SceneChange : MonoBehaviour
 {
 
@@ -17,6 +18,7 @@ public class SceneChange : MonoBehaviour
 	public void LoadStartScene()
 	{
 		SceneManager.LoadScene(0);
+		
 
 	}
 	public void LoadPreviousScene()
@@ -28,14 +30,18 @@ public class SceneChange : MonoBehaviour
 
 	public void LoadExploreScene()
 	{
-		SceneManager.LoadScene(1);
+		SceneManager.LoadScene(2);
 	}
 	public void LoadManageScene()
 	{
-		SceneManager.LoadScene(2);
+		SceneManager.LoadScene(3);
 	}
 	public void LoadProfileScene()
 	{
-		SceneManager.LoadScene(3);
+		SceneManager.LoadScene(4);
 	}
+	public void LoadEmailScene()
+    {
+		SceneManager.LoadScene(1);
+    }
 }
