@@ -18,7 +18,7 @@ public class GameStatus: MonoBehaviour
     int minCredibility = 35;
 
     //UI elements displayed
-    public TMP_Text popularityGauge;
+    public  TMP_Text popularityGauge;
     public TMP_Text credibilityGauge;
     public TMP_Text fundingGauge;
 
@@ -27,11 +27,14 @@ public class GameStatus: MonoBehaviour
     // in the UI element
     void Start()
     {
-        popularity = minPopularity;
-        credibility = minCredibility;
-        funding = minFunding;
-        updateText();
-
+        if(GameStatus.Instance != null)
+        {
+            popularity = minPopularity;
+            credibility = minCredibility;
+            funding = minFunding;
+            updateText();
+        }
+        
     }
 
     // creating method to add to funding resource at cost of other resources
@@ -98,11 +101,28 @@ public class GameStatus: MonoBehaviour
         popularityGauge.text = "Popularity: " + popularity;
         credibilityGauge.text = "Credibility: " + credibility;
     }
-    // Update is called once per frame
-    void Update()
+
+    public static GameStatus Instance;
+
+    private void Awake()
     {
-
+        if (Instance != null)
+        {
+           Destroy(transform.root.gameObject);
+           return;
+        }
+        Instance = this;
+        transform.parent = null;
+        DontDestroyOnLoad(transform.root.gameObject);
     }
-
-
+    public void Save(int funding,int popularity, int credibility)
+    {
+        GameStatus.Instance.funding = funding;
+        GameStatus.Instance.funding = popularity;
+        GameStatus.Instance.funding = credibility;
+    }
+    public void Update()
+    {
+    
+    }
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelLoader : MonoBehaviour
 {
@@ -10,17 +11,18 @@ public class LevelLoader : MonoBehaviour
 
     public float transitionTime = 1f;
 
+    public Button Button;
+
+
+
    
 
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            LoadNextLevel();
-
-        }
+        Button Button = gameObject.GetComponent<Button>();
+        Button.onClick.AddListener(LoadNextLevel);
 
     }
     
