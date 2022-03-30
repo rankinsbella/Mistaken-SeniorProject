@@ -108,7 +108,7 @@ public class GameStatus: MonoBehaviour
     {
         if (Instance != null)
         {
-           Destroy(transform.root.gameObject);
+           //Destroy(transform.root.gameObject);
            return;
         }
         Instance = this;
