@@ -27,11 +27,14 @@ public class GameStatus: MonoBehaviour
     // in the UI element
     void Start()
     {
+    	popularity = minPopularity;
+    	credibility = minCredibility;
+    	funding = minFunding;
         if(GameStatus.Instance != null)
         {
-            popularity = minPopularity;
-            credibility = minCredibility;
-            funding = minFunding;
+            popularity = GameStatus.Instance.popularity;
+            credibility = GameStatus.Instance.credibility;
+            funding = GameStatus.Instance.funding;
             updateText();
         }
         
@@ -108,7 +111,7 @@ public class GameStatus: MonoBehaviour
     {
         if (Instance != null)
         {
-           Destroy(transform.root.gameObject);
+           //Destroy(transform.root.gameObject);
            return;
         }
         Instance = this;
