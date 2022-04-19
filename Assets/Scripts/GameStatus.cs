@@ -17,19 +17,28 @@ public class GameStatus: MonoBehaviour
     int minFunding = 35;
     int minCredibility = 35;
 
+
     //UI elements displayed
-    public  TMP_Text popularityGauge;
+    public TMP_Text popularityGauge;
     public TMP_Text credibilityGauge;
     public TMP_Text fundingGauge;
+
+    //UI Posts 
+    public TMP_Text post01;
+    public TMP_Text post02;
+    public TMP_Text post03;
+    public TMP_Text post04;
+    public TMP_Text post05;
+
 
     // Start is called before the first frame update
     // declaring resource variables and printing variables 
     // in the UI element
     void Start()
     {
-    	popularity = minPopularity;
-    	credibility = minCredibility;
-    	funding = minFunding;
+    	popularity = 50;
+    	credibility = 50;
+    	funding = 50;
         if(GameStatus.Instance != null)
         {
             popularity = GameStatus.Instance.popularity;
@@ -100,6 +109,18 @@ public class GameStatus: MonoBehaviour
         {
             credibility = maxCredibility;
         }
+        if(popularity <= minPopularity)
+        {
+            popularity = minPopularity;
+        }
+        if (funding <= minFunding)
+        {
+            funding = minFunding;
+        }
+        if (credibility <= minCredibility)
+        {
+            credibility = minCredibility;
+        }
         fundingGauge.text = "Funding: " + funding;
         popularityGauge.text = "Popularity: " + popularity;
         credibilityGauge.text = "Credibility: " + credibility;
@@ -121,11 +142,22 @@ public class GameStatus: MonoBehaviour
     public void Save(int funding,int popularity, int credibility)
     {
         GameStatus.Instance.funding = funding;
-        GameStatus.Instance.funding = popularity;
-        GameStatus.Instance.funding = credibility;
+        GameStatus.Instance.popularity = popularity;
+        GameStatus.Instance.credibility = credibility;
+    }
+
+    public void Keep()
+    {
+
     }
     public void Update()
     {
-    
+        while (popularity < minPopularity && funding <= minFunding && credibility <= minCredibility) ;
+        {
+            if(
+            {
+
+            }
+        }
     }
 }
