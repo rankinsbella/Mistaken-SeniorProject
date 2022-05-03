@@ -146,18 +146,18 @@ public class GameStatus: MonoBehaviour
         GameStatus.Instance.credibility = credibility;
     }
 
-    public void Keep()
-    {
+   // public void Keep()
+    //{
 
-    }
-    public void Update()
-    {
-        while (popularity < minPopularity && funding <= minFunding && credibility <= minCredibility) ;
-        {
-            if(
-            {
+    //}
+    //public void Update()
+    //{
+     //   while (popularity < minPopularity && funding <= minFunding && credibility <= minCredibility) ;
+      //  {
+         //   if(
+           // {
 
-            }
-        }
-    }
+           // }
+        //}
+  //  }
 }
